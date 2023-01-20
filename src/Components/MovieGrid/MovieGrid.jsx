@@ -26,7 +26,7 @@ function MovieGrid({ searchQuery, modeFavorite }) {
 
   const { data, status, error } = useQuery([searchQuery, page], async () => {
     const response = await fetch(
-      `http://www.omdbapi.com/?s=${searchQuery}&page=${page}&apikey=247de336`
+      `https://www.omdbapi.com/?s=${searchQuery}&page=${page}&apikey=247de336`
     );
     return response.json();
   });

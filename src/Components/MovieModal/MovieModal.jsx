@@ -12,7 +12,7 @@ function MovieModal({ movie, movieID, open, setOpen, handleClose }) {
   const [isFavorite, setIsFavorite] = useState(false);
   const { data, status, error } = useQuery(["movie", movieID], async () => {
     const response = await fetch(
-      `http://www.omdbapi.com/?i=${movieID}&apikey=247de336`
+      `https://www.omdbapi.com/?i=${movieID}&apikey=247de336`
     );
     return response.json();
   });
