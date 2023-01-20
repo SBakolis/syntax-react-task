@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+
+  &.flex-row {
+    flex-direction: row;
+  }
+
+  &.vertical-center {
+    align-items: center;
+  }
+
+  .search-btn {
+    margin-top: 1rem;
+  }
+}
